@@ -104,4 +104,14 @@
 cscope.*
 tags
 TAGS
+qemu.git.IAB
+qemu.git.IAD
+qemu.git.IMB
+qemu.git.IMD
+qemu.git.PFI
+qemu.git.PO
+qemu.git.PR
+qemu.git.PRI
+qemu.git.PS
+qemu.git.WK3
 *~

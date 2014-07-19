@@ -130,7 +130,7 @@ char *qemu_strsep(char **input, const char *delim)
     }
     return result;
 }
-
+//算出从1970年到 tm里的时间的总秒数
 time_t mktimegm(struct tm *tm)
 {
     time_t t;
@@ -139,6 +139,8 @@ time_t mktimegm(struct tm *tm)
         m += 12;
         y--;
     }
+
+	//md，这是咋算的?
     t = 86400ULL * (d + (153 * m - 457) / 5 + 365 * y + y / 4 - y / 100 + 
                  y / 400 - 719469);
     t += 3600 * tm->tm_hour + 60 * tm->tm_min + tm->tm_sec;

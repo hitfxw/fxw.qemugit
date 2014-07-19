@@ -68,7 +68,7 @@ typedef struct RTCState {
     uint8_t cmos_data[128];
     uint8_t cmos_index;
     int32_t base_year;
-    uint64_t base_rtc;
+    uint64_t base_rtc;  //1970年到host local time (或者utc时间)的总秒数
     uint64_t last_update;
     int64_t offset;
     qemu_irq irq;
